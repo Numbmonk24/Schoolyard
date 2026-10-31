@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | BrightSteps Educational Aids</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">✦</span>
+        <span class="logo-text">BrightSteps</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="shop.html" class="nav-link">Shop</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="resources.html" class="nav-link">Free Resources</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+      <button class="mobile-menu-btn" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>Questions about the tools or how to use them? We’d love to hear from you.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container content-narrow">
+      <form class="contact-form" onsubmit="event.preventDefault(); alert('Thank you for your message! In a live site this would be sent to your email.');">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" required placeholder="Full name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required placeholder="you@example.com">
+        </div>
+        <div class="form-group">
+          <label for="role">I am a...</label>
+          <select id="role" name="role">
+            <option value="">Select one</option>
+            <option value="parent">Parent / Caregiver</option>
+            <option value="teacher">Teacher / Educator</option>
+            <option value="therapist">Therapist / Specialist</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required placeholder="How can we help?"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+
+      <div class="contact-info">
+        <h3>Other ways to reach us</h3>
+        <p>Email: <a href="mailto:hello@brightsteps-edu.example">hello@brightsteps-edu.example</a></p>
+        <p>We typically respond within 1–2 business days.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="logo">
+          <span class="logo-icon">✦</span>
+          <span class="logo-text">BrightSteps</span>
+        </div>
+        <p>Educational aids and visual supports for children who learn differently.</p>
+      </div>
+      <div class="footer-links">
+        <div>
+          <h4>Shop</h4>
+          <a href="shop.html">All Tools</a>
+        </div>
+        <div>
+          <h4>Help</h4>
+          <a href="about.html">About</a>
+          <a href="resources.html">Free Resources</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2026 BrightSteps Educational Aids. These resources are educational tools and are not a substitute for professional diagnosis or therapy.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
